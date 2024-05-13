@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>s4lieri::yukari_yakumo</title>
@@ -25,6 +26,10 @@
     <script src="{{ url_for('static', filename='script.js') }}"></script>
   </head>
 
+  <audio
+    id="damnatio"
+    src="{{ url_for('static', filename='media/damnatio_memorae.mp3') }}"
+  ></audio>
   <body
     class="montserrat-alternates-medium scrollspy"
     data-bs-spy="scroll"
@@ -588,6 +593,8 @@
         class="h-100 flex-column align-items-stretch pe-4 border-end"
       >
         <nav class="nav nav-pills flex-column">
+          <button class="nav-link" id="playButton">&#9658;</button>
+
           <a class="nav-link" href="#start">0</a>
           <a class="nav-link" href="#yokai">I</a>
           <a class="nav-link" href="#gaps">II</a>

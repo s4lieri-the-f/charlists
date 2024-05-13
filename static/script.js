@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
+    var audio = document.getElementById('damnatio');
+    audio.volume = 0.1;
+
+    document.querySelector('#playButton').addEventListener('click', function () {
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    });
+
     const bg = document.querySelector(".dynamic-background");
     let degree = 270;
 
