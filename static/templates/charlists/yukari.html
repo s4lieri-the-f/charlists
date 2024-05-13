@@ -1,0 +1,602 @@
+<html>
+  <head>
+    <title>s4lieri::yukari_yakumo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- include Bootstap 5.0.2 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </head>
+
+  <body
+    class="montserrat-alternates-medium scrollspy"
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-yukari"
+    data-bs-offset="40"
+    data-bs-smooth-scroll="true"
+    tabindex="0"
+  >
+    <div class="flex-column text-center charlist-main">
+      <div>
+        <div class="spied-element" id="start">
+          <h1 class="gradient-flow-red">Юкари Якумо</h1>
+          <h6 class="gradient-flow upper-text">DIVIDE ET IMPERA</h6>
+          <div class="line"></div>
+          <img
+            class="mx-auto d-block img-fluid"
+            src="{{url_for('static', filename='media/images/yukari_main.jpg')}}"
+            alt="Yukari Yakumo"
+          />
+        </div>
+        <div class="line"></div>
+        <div class="spied-element" id="yokai">
+          <h3 class="gradient-flow">
+            <span class="double-text gradient-flow"
+              ><span class="lower-text gradient-flow">Ёкай разрывов</span
+              ><span class="upper-text gradient-flow">すきま妖怪</span></span
+            >
+          </h3>
+          <p class="data-text">
+            <span class="gradient-flow-red">Юкари Якумо</span> –
+            <span class="double-text gradient-flow"
+              ><span class="lower-text gradient-flow">ёкай разрывов</span
+              ><span class="upper-text gradient-flow">すきま妖怪</span></span
+            >, она же <span class="gradient-flow">ёкай границ</span>. Ёкаи,
+            будучи мифологическими существами, с трудом поддаются классификации.
+          </p>
+          <p class="data-text">
+            Выделить группу, к которой принадлежит
+            <span class="gradient-flow-red">Юкари</span>, невозможно, вследствие
+            чего она считается уникальным видом. Ёкаи появляются произвольно, их
+            появление зависит от множества факторов, включая место, время, и
+            окружение. Учитывая нестабильное состояние Генсокё, отрезанное от
+            внешних миров
+            <span class="double-text"
+              ><span class="lower-text gradient-flow-red">Великим Барьером</span
+              ><span class="upper-text gradient-flow-red"
+                >グレートバリア</span
+              ></span
+            >, вызванное тем, что всё это место является домом забытых,
+            невозможно определить однозначную причину, место и время появления
+            <span class="gradient-flow-red">Юкари</span>, столь важные для
+            классификации ёкаев.
+          </p>
+          <p class="data-text">
+            Каждый ёкай обладает своими уникальными способностями и свойствами.
+            К примеру, некоторые ёкаи могут отделять свои части тела, какие-то -
+            нематериальны, некоторые - бессмертны. Свойства каждого ёкая задаёт
+            его история и характер.
+          </p>
+          <p class="data-text">
+            Выяснить возраст ёкая тоже достаточно сложно - некоторые могут
+            существовать всего дни, какие-то по возрасту превосходят богов, или
+            же ими и являются. Сила и мудрость ёкая зависит от его возраста -
+            чем дольше тот живёт, тем больше сил и энергии тот успевает собрать.
+            Многие ёкаи наблюдали за историями миров, их величием и падениями,
+            их жертвами и победами. Они видели множество миров, их жителей и их
+            судьбы. Они видели множество барьеров, разрывов и пределов, их
+            преодоления и падения. Они видели множество барьеров, разрывов и
+            пределов, их преодоления и падения.
+            <span class="gradient-flow-red">Юкари</span> утверждает, что ей
+            всегда шестнадцать лет. Но почему же тогда она - одно из сильнейших
+            существ Генсокё, и автор
+            <span class="double-text"
+              ><span class="lower-text gradient-flow-red">Великого Барьера</span
+              ><span class="upper-text gradient-flow-red"
+                >グレートバリア</span
+              ></span
+            >, защищающего этот небольшой мир от вмешательств извне?
+          </p>
+          <p class="data-text">
+            Набрав достаточно силы,
+            <span class="gradient-flow-red">Юкари</span> приобрела некоторые
+            свойства и способности, присущие ёкаям, начиная с некоторых уровней
+            развития:
+          </p>
+          <ul>
+            <li>
+              <span class="double-text"
+                ><span class="lower-text gradient-flow-purple"
+                  >Физиология ёкая</span
+                ><span class="upper-text gradient-flow-purple"
+                  >妖怪の生理</span
+                ></span
+              >
+            </li>
+            <p class="data-text">
+              В первую очередь ёкаи являются духовными, а не физическими
+              существами. Они гораздо сильнее и быстрее людей, обладают более
+              развитыми чувствами (в частности ночным зрением), практически не
+              болеют, а также способны жить сотни и более лет, абсолютно при
+              этом не старея. Кроме того, ёкаи, в отличие от людей, одновременно
+              состоят и не состоят из крови и плоти, а также не связаны
+              ограничениями материального мира. Ёкай существует, пока
+              функционирует его разум, существует его магическая энергия, пока
+              существует его история.
+            </p>
+            <li>
+              <span class="double-text"
+                ><span class="lower-text gradient-flow-purple">Даммаку</span
+                ><span class="upper-text gradient-flow-purple">弾幕</span></span
+              >
+            </li>
+            <p class="data-text">
+              Даммаку - всевозможные снаряды, которые выстраиваются в невероятно
+              сложные и красивые узоры. В качестве данмаку можно использовать
+              практически всё, что в душе угодно: энергетические снаряды самых
+              разных форм и размеров, амулеты, ножи, огненные шары, живых
+              насекомых и даже самого себя. Юкари предпочитает несколько типов
+              <span class="double-text"
+                ><span class="lower-text gradient-flow-purple">даммаку</span
+                ><span class="upper-text gradient-flow-purple"
+                  >BULLETS</span
+                ></span
+              >, включающие в себя как обычные энергетические снаряды, так и
+              объекты из других миров, представляющие собой забытые предметы,
+              находящиеся в <span class="chromatic">разломе</span>
+              <span class="gradient-flow-red">Юкари</span>. Самая
+              частоиспользуемая форма - заброшенные старые поезда из метро и
+              дорожные знаки. Впрочем, она не ограничена только ими. Любой
+              предмет, который
+              <span class="gradient-flow-red">Юкари</span> может достать из
+              <span class="chromatic">разлома</span>, может быть использован в
+              качестве даммаку.
+            </p>
+            <li>
+              <span class="double-text"
+                ><span class="lower-text gradient-flow-purple">Спелл-карты</span
+                ><span class="upper-text gradient-flow-purple"
+                  >スペルカード</span
+                ></span
+              >
+            </li>
+            <p class="data-text">
+              <span class="gradient-flow-purple">Спелл-карты</span> - обладающие
+              уникальными именами боевые техники. Спелл-карты используются в
+              Генсокё во время дуэлей по специальным правилам, что позволяют
+              превратить насилие в игру и показывать свою силу, проявляя
+              снисхождение к оппонентам. Существуют несколько правил, которые
+              должны выполняться при битве на спелл-картах. Все эти правила
+              соблюдаются только в случае, если противник заявляет свои
+              способности как спелл-карты. В противном случае бой идёт без
+              ограничений.
+            </p>
+
+            <ul>
+              <li>
+                Использование спелл-карт запрещает побеждать противника
+                исключительно за счёт силы и предполагает наличие в атаках
+                красоты и смысла, отражённого в названии.
+              </li>
+              <li>
+                У каждой
+                <span class="gradient-flow-purple">спелл-карты</span> есть
+                таймер, ограничивающий продолжительность техники, и «полоса
+                здоровья». Эту полосу необходимо израсходовать нанесением
+                определенного количества урона противнику, дабы суметь пройти
+                <span class="gradient-flow-purple">спелл-карту</span>. В момент
+                выполнения спелл-карты
+                <span class="double-text"
+                  ><span class="lower-text">персонаж</span
+                  ><span class="upper-text gradient-flow">Юкари</span></span
+                >
+                неуязвим. Базовое количество урона, которое необходимо нанести
+                Юкари, чтобы вывести её из состояния выполнения спелл-карты,
+                равно четырем сотням атак (вне зависимости от их эффекта или
+                урона, тот будет нивелирован
+                <span class="gradient-flow-red">правилами</span>). Количество
+                атак скалируется от некоторых барьеров, которые устанавливаются
+                самой Юкари.
+              </li>
+              <li>Спелл-карты должны быть объявлены перед использованием.</li>
+              <li>
+                Количество используемых именных заклинаний должно быть
+                определено перед поединком.
+              </li>
+            </ul>
+            <p></p>
+            <li>
+              <span class="double-text"
+                ><span class="lower-text gradient-flow-purple"
+                  >Регенерация </span
+                ><span class="upper-text gradient-flow-purple"
+                  >REGENERATION</span
+                ></span
+              >
+            </li>
+            <p class="data-text">
+              Против ёкаев бесполезны физические атаки, так как они способны
+              мгновенно восстанавливаться, даже если их разрубили на несколько
+              частей. Ядром ёкая является не тело, а разум.
+            </p>
+            <li>
+              <span class="double-text"
+                ><span class="lower-text gradient-flow-purple">Восприятие</span
+                ><span class="upper-text gradient-flow-purple"
+                  >PERCEPTION</span
+                ></span
+              >
+            </li>
+            <p class="data-text">
+              Ёкаи и их виды способны видеть сквозь иллюзии и до некоторой
+              степени их игнорировать.
+            </p>
+            <li>
+              <span class="double-text"
+                ><span class="lower-text gradient-flow-purple"
+                  >Искажение окружения</span
+                ><span class="upper-text gradient-flow-purple"
+                  >DISTORTION</span
+                ></span
+              >
+            </li>
+            <p class="data-text">
+              Энергия ёкаев оказывает серьёзное воздействие на все окружающие её
+              объекты на духовном уровне: книги, написанные ёкаями, впитывают их
+              ауру, становясь книгами Ёма; предметы превращаются в
+              <span class="double-text"
+                ><span class="lower-text">цукумогами</span
+                ><span class="upper-text">つぐもがみ</span></span
+              >; а находящиеся рядом с местом активной деятельностью ёкаев
+              животные могут стать ёкаями-животными. Даже человек может
+              превратиться в ёкая, если будет очень долго находиться под
+              постоянным влиянием сильной ёкайской ауры.
+            </p>
+            <li>
+              <span class="double-text"
+                ><span class="lower-text gradient-flow-purple">Полёт</span
+                ><span
+                  class="upper-text gradient-flow-purple"
+                  style="text-align: center; letter-spacing: 0.7em"
+                  >FLIGHT</span
+                ></span
+              >
+            </li>
+            <p class="data-text">
+              <span class="gradient-flow-red">Юкари</span> способна летать без
+              прямых ограничений по высоте и дальности. Потенциально её скорость
+              может приближаться к быстрому гиперзвуку, будучи ограниченной
+              только характеристиками самого
+              <span class="gradient-flow-red">ёкая границ</span>. Впрочем, этой
+              способностью
+              <span class="gradient-flow-red">Юкари</span> пользуется достаточно
+              редко.
+            </p>
+          </ul>
+        </div>
+        <div class="line"></div>
+        <div class="spied-element" id="gaps">
+          <h3 class="chromatic">
+            <span class="double-text"
+              ><span class="lower-text">Разломы</span
+              ><span class="upper-text">スキマ</span></span
+            >
+          </h3>
+          <p class="data-text">
+            Одна из отличительных черт
+            <span class="gradient-flow-red">Юкари</span> - способность создавать
+            <span class="chromatic">разломы</span>. Они представляют собой
+            непроглядно чёрные "дыры в пространстве", которые могут появляться и
+            исчезать в любом месте и в любое время по желанию
+            <span class="gradient-flow-red">Юкари</span>.
+          </p>
+          <p class="data-text">
+            Внутри <span class="chromatic">разлома</span> находится мир, который
+            не подчиняется законам физики и логики, и в котором всё возможно.
+            Внутри <span class="chromatic">разлома</span> можно найти всё, что
+            угодно: от забытых вещей и людей до самых страшных кошмаров. Внутри
+            разлома можно найти всё, что угодно: от забытых вещей и людей до
+            самых страшных кошмаров. Не просто так из
+            <span class="chromatic">разломов</span> смотрит множество красных
+            глаз.
+          </p>
+          <p class="data-text">
+            Используя силу управления границами,
+            <span class="gradient-flow-red">Юкари</span> способна создавать
+            мерные <span class="chromatic">разломы</span>, которые служат
+            порталами, соединяющими различные точки пространства. Со стороны
+            <span class="chromatic">разлом</span> представляет собой разрез в
+            пространстве, который ведет в измерение фиолетового цвета, из
+            которого могут быть видны глаза и руки. Границы этих
+            <span class="chromatic">разломов</span> весьма материальны, и
+            <span class="gradient-flow-red">Юкари</span>
+            может буквально сидеть на них (и часто сидит на них во время
+            полёта).
+          </p>
+          <p class="data-text">
+            <span class="gradient-flow-red">Юкари</span> способна использовать
+            <span class="chromatic">разломы</span> для перемещения
+            (необязательно мгновенного, оно может занимать некоторое время, во
+            время которого <span class="gradient-flow-red">Юкари</span> будет
+            находиться внутри <span class="chromatic">разлома</span>),
+            поглощения чужих таргетированных (имеющих снаряд или любое другое
+            физическое воплощение) атак, и вызова предметов, используемых
+            <span class="double-text"
+              ><span class="lower-text gradient-flow-purple">даммаку</span
+              ><span class="upper-text gradient-flow-purple">弾幕</span></span
+            >.
+          </p>
+        </div>
+        <div class="line"></div>
+        <div class="spied-element" id="limits">
+          <h3>
+            <span class="double-text"
+              ><span class="lower-text gradient-flow">Границы</span
+              ><span class="upper-text gradient-flow">国境</span></span
+            >
+          </h3>
+          <p class="data-text">
+            <span class="gradient-flow-red">Юкари</span>, будучи
+            <span class="double-text gradient-flow"
+              ><span class="lower-text gradient-flow">ёкаем разрывов</span
+              ><span class="upper-text gradient-flow">すきま妖怪</span></span
+            >, также обладает исключительной способностью управлять
+            <span class="double-text"
+              ><span class="lower-text gradient-flow">границами</span
+              ><span class="upper-text gradient-flow">国境</span></span
+            >.
+            <span class="double-text"
+              ><span class="lower-text gradient-flow">Границы</span
+              ><span class="upper-text gradient-flow">国境</span></span
+            >, созданные <span class="gradient-flow-red">Юкари</span>, могут
+            выполнять роль "фильтров" с заданными свойствами. Такие границы
+            распространяются на любые объекты и запрещают нарушать выставленные
+            ограничения всем.
+          </p>
+          <p class="data-text">
+            С другой стороны,
+            <span class="gradient-flow-red">Юкари</span> способна преодолевать и
+            <span class="double-text"
+              ><span class="lower-text gradient-flow">стирать</span
+              ><span class="upper-text gradient-flow">洗う</span></span
+            >
+            любые другие
+            <span class="double-text"
+              ><span class="lower-text gradient-flow">границы</span
+              ><span class="upper-text gradient-flow">国境</span></span
+            >, которые она осознаёт.
+          </p>
+        </div>
+        <div class="line"></div>
+        <div class="spied-element" id="barriers">
+          <h3 class="gradient-flow-bloody">
+            <span class="double-text gradient-flow"
+              ><span class="lower-text gradient-flow-bloody">Барьеры</span
+              ><span class="upper-text gradient-flow-bloody">バリア</span></span
+            >
+          </h3>
+          <p class="data-text">
+            Самая важная черта и способность
+            <span class="gradient-flow-red">Юкари</span> - создание и управление
+            <span class="gradient-flow-bloody">барьерами</span>. Барьеры,
+            созданные <span class="gradient-flow-red">Юкари</span>, могут
+            выполнять роль "фильтров" с заданными свойствами. Такие барьеры
+            распространяются на любые объекты и запрещают нарушать выставленные
+            ограничения всем, равно как и
+            <span class="double-text"
+              ><span class="lower-text gradient-flow">границы</span
+              ><span class="upper-text gradient-flow">国境</span></span
+            >. Эта способность подкрепляется силой управления
+            <span class="double-text"
+              ><span class="lower-text gradient-flow">границами</span
+              ><span class="upper-text gradient-flow">国境</span></span
+            >
+            и <span class="chromatic">разломами</span>.
+          </p>
+          <p class="data-text">
+            <span class="gradient-flow-bloody">Барьеры</span>, созданные
+            <span class="gradient-flow-red">Юкари</span>, не могут быть
+            разрушены без прямого вмешательства в логику их работы. Они будут
+            функционировать, пока в их работе не вызвана логическая ошибка.
+            Форма, поведение, движение и размеры
+            <span class="gradient-flow-bloody">барьеров</span> могут быть
+            абсолютно любыми и определяются только
+            <span class="gradient-flow-red">Юкари</span>.
+          </p>
+          <p class="data-text">
+            Равно как и в случае с
+            <span class="double-text"
+              ><span class="lower-text gradient-flow">границами</span
+              ><span class="upper-text gradient-flow">国境</span></span
+            >, <span class="gradient-flow-red">Юкари</span> способна
+            преодолевать и
+            <span class="double-text"
+              ><span class="lower-text gradient-flow">стирать</span
+              ><span class="upper-text gradient-flow">洗う</span></span
+            >
+            любые другие
+            <span class="double-text"
+              ><span class="lower-text gradient-flow-bloody">барьеры</span
+              ><span class="upper-text gradient-flow-bloody">バリア</span></span
+            >, которые она осознаёт.
+          </p>
+          <p class="data-text">
+            <span class="gradient-flow-red">Юкари</span> способна создавать
+            неограниченное количество
+            <span class="gradient-flow-bloody">барьеров</span> одновременно
+            прямо на ходу.
+            <span class="gradient-flow-bloody">Барьеры</span> аккумулируют часть
+            её энергии в себе.
+          </p>
+          <p class="data-text">
+            Изначально <span class="gradient-flow">Юкари</span> появляется на
+            поле боя с
+            <span class="double-text"
+              ><span class="lower-text gradient-flow"
+                >Малым Защитным Барьером</span
+              ><span class="upper-text gradient-flow"
+                >小さな保護バリア</span
+              ></span
+            >, имеющим следующую установку и распространяющимся на её тело,
+            сознание, дух, душу и иные составные части, на которые можно
+            повлиять: "Барьер не пропускает никакие взаимодействия со стороны
+            иных существ относительно <span class="gradient-flow">Юкари</span>."
+          </p>
+        </div>
+        <div class="line"></div>
+        <div class="spied-element" id="mentality">
+          <h3 class="mentality">Ментальность</h3>
+          <p class="data-text">
+            <span class="gradient-flow">Юкари</span> обладает огромными
+            вычислительными мощностями, что позволяет ей обрабатывать информацию
+            на уровне, недоступном для человека. Она способна воспринимать и
+            анализировать информацию, поступающую из различных источников, и
+            принимать решения на основе этой информации. Предположительно, её
+            способности в этом плане могут состязаться с суперкомпьютером
+            Ломоносов II.
+          </p>
+          <p class="data-text">
+            Будем считать это нормальным
+            <span class="mentality">ментальным</span> состоянием
+            <span class="gradient-flow">Юкари</span>, оно же -
+            <span class="mentality">100%</span>. По мере снижения этого
+            состояния вычислительные мощности и когнитивные способности
+            подверженного этой системе пропорционально снижаются. По достижению
+            этого значения <span class="mentality">нуля</span>,
+            <span class="mentality">ментальное</span> состояние
+            <span class="gradient-flow">Юкари</span> считается невосстановимым и
+            та признаётся мёртвой, в случае если нет энергии на восстановление
+            оной. Для восстановления требуется, чтобы остальные участники
+            команды были живы и функционировали, иначе
+            <span class="gradient-flow">Юкари</span> всё же признается павшей
+            окончательно.
+          </p>
+          <p class="data-text">
+            Помимо всего прочего, такая система в дополнение ко всему
+            навязывается остальным участникам боя как посредством
+            <span class="double-text"
+              ><span class="lower-text gradient-flow"
+                >Малого Защитного Барьера</span
+              ><span class="upper-text gradient-flow"
+                >小さな保護バリア</span
+              ></span
+            >, так и
+            <span class="double-text"
+              ><span class="lower-text gradient-flow-purple"
+                >искажением окружения</span
+              ><span class="upper-text gradient-flow-purple"
+                >DISTORTION</span
+              ></span
+            >, навязывая существам неполноценное положение "ёкая", пока те не
+            являются союзниками <span class="gradient-flow">Юкари</span> (что
+            приравнивается к сдаче в случае боя с противником).
+          </p>
+          <p class="data-text">
+            Более того, <span class="gradient-flow">Юкари</span> способна при
+            помощи
+            <span class="double-text"
+              ><span class="lower-text gradient-flow">границ</span
+              ><span class="upper-text gradient-flow">国境</span></span
+            >
+            и <span class="gradient-flow-bloody">барьеров</span> вызвать
+            <span class="double-text"
+              ><span class="lower-text mentality">Ментальное Пространство</span
+              ><span class="upper-text mentality">精神的空間</span></span
+            >, в котором любой полученный урон автоматически скалируется наносит
+            ущерб <span class="mentality">ментальному</span> состоянию
+            оппонента. Базово одно попадание любым снарядом
+            <span class="double-text"
+              ><span class="lower-text gradient-flow-purple">даммаку</span
+              ><span class="upper-text gradient-flow-purple">弾幕</span></span
+            >
+            понижает показатель
+            <span class="mentality">ментального</span> состояния оппонента на
+            <span class="mentality">1%</span>.
+          </p>
+        </div>
+        <div class="line"></div>
+        <div class="spied-element" id="lost-word">
+          <h3 class="lost-word">
+            <span class="double-text"
+              ><span class="lower-text lost-word">LOST WORD</span
+              ><span class="upper-text lost-word">ロストワード</span></span
+            >
+          </h3>
+          <p class="data-text">
+            <span class="double-text lost-word"
+              ><span class="lower-text lost-word">Потерянное слово</span
+              ><span class="upper-text lost-word">ロストワード</span></span
+            >
+            - <span class="mentality">проклятие</span>, которое с собой приносит
+            в мир <span class="gradient-flow">Юкари</span>. В самом начале боя
+            <span class="gradient-flow">Юкари</span> определяет одно слово,
+            которое до конца боя заменяется на
+            <span class="lost-word">█████</span>.
+          </p>
+          <p class="data-text">
+            Попытка написать это слово вызывает логическую ошибку в мире, и
+            произнесший его автоматически автоматически исчезает полностью,
+            чтобы слово не перестало быть забытым. Любые способности и
+            логические связи с
+            <span class="double-text lost-word"
+              ><span class="lower-text lost-word">потерянным словом</span
+              ><span class="upper-text lost-word">ロストワード</span></span
+            >
+            нарушаются, как только слово становится забытым, и любые связанные с
+            ним объекты, структуры и атрибуты существ перестают существовать для
+            ненарушения выстроившейся логики мира.
+          </p>
+          <p class="data-text">
+            Это слово возможно вернуть, если вывести корректную логическую
+            цепочку, выводяющую существование этого слова, или найти нарушение в
+            логике действий <span class="gradient-flow">Юкари</span>, связанное
+            с этим словом.
+          </p>
+          <p class="data-text">
+            Появление эффекта
+            <span class="double-text lost-word"
+              ><span class="lower-text lost-word">потерянного слова</span
+              ><span class="upper-text lost-word">ロストワード</span></span
+            >
+            в бою достаточно сильно нарушает логику и порядок в мире, из-за чего
+            тот начинает разрушаться. Раз в некоторое время на поле боя будет
+            происходить <span class="mentality">логическая ошибка</span> в одном
+            из постов Юкари, позволяющая нарушать её состояние и общеизвестные
+            ограничения. Спустя <span class="mentality">несколько</span> таких
+            <span class="mentality">логических ошибок</span>
+            <span class="gradient-flow">Юкари</span> будет вынуждена сбежать в
+            <span class="double-text"
+              ><span class="lower-text">Разлом</span
+              ><span class="upper-text">スキマ</span></span
+            >, а мир будет уничтожен логическими ошибками, связанными с
+            <span class="double-text lost-word"
+              ><span class="lower-text">потерянным словом</span
+              ><span class="upper-text">ロストワード</span></span
+            >.
+          </p>
+        </div>
+      </div>
+      <nav
+        id="navbar-yukari"
+        class="h-100 flex-column align-items-stretch pe-4 border-end"
+      >
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" href="#start">0</a>
+          <a class="nav-link" href="#yokai">I</a>
+          <a class="nav-link" href="#gaps">II</a>
+          <a class="nav-link" href="#limits">III</a>
+          <a class="nav-link" href="#barriers">IV</a>
+          <a class="nav-link" href="#mentality">V</a>
+          <a class="nav-link" href="#lost-word">VI</a>
+        </nav>
+      </nav>
+    </div>
+  </body>
+</html>
