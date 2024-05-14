@@ -1,4 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
+from datetime import datetime
+import requests
 import os
 
 app = Flask(__name__, template_folder="./static/templates")
@@ -9,4 +11,4 @@ def home():
 
 if __name__ == "__main__":
     print(os.getcwd())
-    app.run(host="0.0.0.0", port=8080, debug=False)
+    app.run(host="0.0.0.0", port=8080, debug=True)
